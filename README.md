@@ -5,8 +5,6 @@
 Install Python at [here](https://www.python.org/downloads/)
 
 ### 2. Install Robot Framework
-Run this command
-
 ```
 pip install robotframework
 ```
