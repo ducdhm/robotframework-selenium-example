@@ -19,7 +19,7 @@ pip install --upgrade robotframework-seleniumlibrary
 
 ## Run example
 ```
-robot test-cases\example\example.robot
+robot -d log test-cases
 ```
 
 ## Selenium Keywords

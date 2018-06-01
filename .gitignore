@@ -1,4 +1,2 @@
 *.idea
-debug.log
-*.html
-*.xml
+log

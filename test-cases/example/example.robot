@@ -1,6 +1,8 @@
 *** Settings ***
-Documentation     Simple example using SeleniumLibrary.
-Library           SeleniumLibrary
+Documentation       Search Google
+Library             SeleniumLibrary
+Test Teardown       Close Browser
+
 
 *** Variables ***
 ${GOOGLE_URL}           https://www.google.com.vn/
@@ -11,14 +13,11 @@ ${CHROME_OPTION}=       Create Dictionary    args=${ARGS}
 
 
 *** Test Cases ***
-Search Google
+Search Google with "Google Search" button
     Open Google
-#    Add jQuery
-    Enter Keyword    Hello
-    Hide Security Popup
+    Switch to English language
+    Enter Keyword       Hello
     Click Search Button
-#    Click Lucky Button
-#    [Teardown]    Close Browser
 
 
 *** Keywords ***
@@ -29,10 +28,8 @@ Open Google
     Wait For Condition      return document.title == 'Google'
 
 
-Add jQuery
-    Execute Javascript      alert('a')
-    Execute Javascript      var headID = document.getElementsByTagName('head')[0];var newScript = document.createElement('script');newScript.type='text/javascript';newScript.src='http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js';headID.appendChild(newScript);
-    Execute Javascript      alert('b')
+Switch to English language
+    Click Element   xpath://a[contains(text(), 'English')]
 
 
 Enter Keyword
@@ -40,14 +37,6 @@ Enter Keyword
     Input Text      css:input#lst-ib     ${keyword}
 
 
-Hide Security Popup
-    Click Element   xpath://a[contains(text(), 'KHÔNG, CẢM ƠN')]
-
-
 Click Search Button
-    Click Element   xpath://a[contains(text(), 'Tìm với Google')]
-
-
-Click Lucky Button
-    Wait Until Page Contains Element    jquery:input["value"="I'm Feeling Lucky"]
-    Click Element                       jquery:input["value"="I'm Feeling Lucky"]
+    Wait Until Page Contains Element    xpath://input[@value="Google Search"][@type="button"]
+    Click Element                       xpath://input[@value="Google Search"][@type="button"]
