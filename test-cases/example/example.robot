@@ -38,5 +38,5 @@ Enter Keyword
 
 
 Click Search Button
-    Wait Until Page Contains Element    xpath://input[@value="Google Search"][@type="button"]
-    Click Element                       xpath://input[@value="Google Search"][@type="button"]
+    Wait Until Page Contains Element    xpath://input[@value="Google Search"]
+    Click Element                       xpath://input[@value="Google Search"]
