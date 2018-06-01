@@ -19,3 +19,6 @@ pip install --upgrade robotframework-seleniumlibrary
 ```
 robot example.robot
 ```
+
+## Selenium Keywords
+Please view them at [here](http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Create%20Webdriver)
