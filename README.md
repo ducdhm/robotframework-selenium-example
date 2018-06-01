@@ -4,6 +4,8 @@
 ### 1. Python
 Install Python at [here](https://www.python.org/downloads/)
 
+**Note**: Make sure you add Python to `PATH` environment variable 
+
 ### 2. Install Robot Framework
 ```
 pip install robotframework
