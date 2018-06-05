@@ -5,7 +5,7 @@ Test Teardown       Close Browser
 
 
 *** Variables ***
-${GOOGLE_URL}           https://www.google.com.vn/
+${GOOGLE_URL}           https://ducdhm:Ventum@2007@www.google.com.vn/
 ${BROWSER}              Chrome
 ${PROXY}                10.128.10.88:8080
 ${ARGS}=                Create List          --proxy-server=${PROXY}
@@ -16,8 +16,9 @@ ${CHROME_OPTION}=       Create Dictionary    args=${ARGS}
 Search Google with "Google Search" button
     Open Google
     Switch to English language
-    Enter Keyword       Hello
+    Enter Keyword           Hello
     Click Search Button
+    Page Should Contain     css:a#hello
 
 
 *** Keywords ***
@@ -35,6 +36,7 @@ Switch to English language
 Enter Keyword
     [Arguments]     ${keyword}
     Input Text      css:input#lst-ib     ${keyword}
+    Click Element   css:img#hplogo
 
 
 Click Search Button
