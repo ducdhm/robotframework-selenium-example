@@ -5,7 +5,7 @@ Test Teardown       Close Browser
 
 
 *** Variables ***
-${GOOGLE_URL}           https://ducdhm:Ventum@2007@www.google.com.vn/
+${GOOGLE_URL}           https://www.google.com.vn/
 ${BROWSER}              Chrome
 ${PROXY}                10.128.10.88:8080
 ${ARGS}=                Create List          --proxy-server=${PROXY}
