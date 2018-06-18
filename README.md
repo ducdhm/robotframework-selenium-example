@@ -56,3 +56,6 @@ robot -d log test-cases
 
 ## IV. Selenium Keywords
 Please view them at [here](http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Create%20Webdriver)
+
+## V. License
+Please read at https://github.com/ducdhm/robotframework-selenium-example/blob/master/LICENSE.md
