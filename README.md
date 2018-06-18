@@ -28,6 +28,20 @@ You can download Chrome and Firefox drivers at following links:
 ### 5. Add Web-drivers to `PATH` environment variable.
  1. After download all web-drivers, please put them in `drivers` folder
  2. Follow [this guide](https://www.java.com/en/download/help/path.xml) to add web-drivers to `PATH` environment variable
+ 
+## Text Editor or IDE for RobotFramework
+### 1. Ride
+You can follow [this guide](https://github.com/robotframework/RIDE/wiki) to setup Ride Editor
+
+### 2. Sublime Text 3
+ 1. Download and install Sublime Text 3 at [here](https://www.sublimetext.com/3)
+ 2. After installing Sublime Text 3, please install `Package Control` for it at [this link](https://packagecontrol.io/installation)
+ 3. Restart Sublime Text 3
+ 4. Press `Ctrl` + `Shift` + `P`
+ 5. Type `pi` and choose `Package Control: Install Package`
+ 6. When install dialog is showed up, type `robotframe` and choose `Robot Framework Assistant`
+ 7. Select menu `File > Open Folder...` and then select your folder
+ 8. Let's rock and roll!
 
 ## Run example
 ```
