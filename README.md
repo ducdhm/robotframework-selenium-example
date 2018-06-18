@@ -1,6 +1,6 @@
 # Robot Framework + Selenium example
 
-## Pre-requirement
+## I. Pre-requirement
 ### 1. Python
 Install Python at [here](https://www.python.org/downloads/)
 
@@ -29,7 +29,7 @@ You can download Chrome and Firefox drivers at following links:
  1. After download all web-drivers, please put them in `drivers` folder
  2. Follow [this guide](https://www.java.com/en/download/help/path.xml) to add web-drivers to `PATH` environment variable
  
-## Text Editor or IDE for RobotFramework
+## II. Text Editor or IDE for RobotFramework
 ### 1. Ride
 You can follow [this guide](https://github.com/robotframework/RIDE/wiki) to setup Ride Editor
 
@@ -43,10 +43,10 @@ You can follow [this guide](https://github.com/robotframework/RIDE/wiki) to setu
  7. Select menu `File > Open Folder...` and then select your folder
  8. Let's rock and roll!
 
-## Run example
+## III. Run example
 ```
 robot -d log test-cases
 ```
 
-## Selenium Keywords
+## IV. Selenium Keywords
 Please view them at [here](http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Create%20Webdriver)
