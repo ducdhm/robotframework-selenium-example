@@ -18,7 +18,6 @@ Search Google with "Google Search" button
     Switch to English language
     Enter Keyword           Hello
     Click Search Button
-    Page Should Contain     css:a#hello
 
 
 *** Keywords ***
@@ -36,7 +35,6 @@ Switch to English language
 Enter Keyword
     [Arguments]     ${keyword}
     Input Text      css:input#lst-ib     ${keyword}
-    Click Element   css:img#hplogo
 
 
 Click Search Button
